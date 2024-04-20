@@ -1,0 +1,124 @@
+<!DOCTYPE Html>
+<html>
+
+<head>
+    <title>Acceuil</title>
+    <link rel="stylesheet" type="text/css" href="../css/interface.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar">
+        <!-- logo -->
+        <!-- <div class="logo">
+            <img src="../images/webContenent/logo.png" alt="">
+        </div> -->
+        <!-- profile -->
+        <div class="profile">
+            <div class="profile-img">
+                <a href="../images/webContenent/cuteGirl.jpg">
+                    <img src="../images/webContenent/cuteGirl.jpg" alt="">
+                </a>
+            </div>
+            <div class="name">
+                <h3 id="yourName">Your name</h3>
+            </div>
+            <span id="Nmuser">@User</span>
+        </div>
+        <!-- information -->
+        <div class="information">
+            <div class="about">
+                <!-- box_1 -->
+                <div class="box">
+                    <h3>00</h3>
+                    <span>Posts</span>
+                </div>
+                <!-- box_2 -->
+                <div class="box">
+                    <h3>00</h3>
+                    <span>Coms</span>
+                </div>
+            </div>
+            <!-- description -->
+            <div class="description">
+                <span id="bio">Bio</span>
+            </div>
+        </div>
+        <!-- menue -->
+        <div class="menue">
+            <a href="#" id="infoclick">
+                <span class="icon">
+                   <img src="../images/person-outline.397x512.png" alt="">
+               </span> info
+            </a>
+            <a href="#" id="postclick">
+                <span class="icon">
+                <img src="../images/person-outline.397x512.png" alt="">
+                Posts
+                </span>
+            </a>
+
+            <a href="#" id="comsclick">
+                <span class="icon">
+                <img src="../images/send-message-dm.512x512.png" alt="">
+                Com's
+                </span>
+            </a>
+
+            <a href="#" id="lien">
+                <span class="icon">
+                    <img src="../images/log-out.512x481.png" alt="">
+                    Deconecter
+                </span>
+            </a>
+        </div>
+    </div>
+    <!-- container -->
+    <div class="container-ensemble">
+        <div class="header">
+            <img src="../images/webContenent/img2.jpg" alt="">
+            <img src="../images/webContenent/img7.jpg" alt="">
+            <img src="../images/webContenent/img9.jpg" alt="">
+        </div>
+
+        <form id="userForm" class="containerForm" style="display:block;">
+            <span class="titre">vos information</span>
+            <div class="a-remplir">
+                <span class="info">information</span>
+                <div class="nom-prenom">
+                    <input type="text" id="nom" name="firstname" placeholder="votre nom">
+                    <input type="text" id="prenom" name="lastname" placeholder="votre prenom">
+                </div>
+                <div class="username-email">
+                    <input type="text" id="username" name="username" placeholder="username">
+                    <input type="email" id="email" name="email" placeholder="e-mail">
+                </div>
+            </div>
+            <div class="a-remplir2">
+
+                <span class="info">contact</span>
+                <div class="Adress-domicile">
+                    <input type="text" id="adress" placeholder="votre domicile">
+                </div>
+                <div class="ville-codep">
+                    <input type="text" id="ville" placeholder="votre ville">
+                    <input type="text" id="codepostal" placeholder="votre code postal">
+                </div>
+            </div>
+            <input type="submit" value="Soumettre" id="btn">
+
+        </form>
+        <form id="postForm" class="container-post" style="display:none;">
+            <div class="post-contenue">
+                <div class="publication_user" id="pubUser">
+
+                </div>
+            </div>
+        </form>
+
+    </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/bckinterface.js"></script>
+
+</html>

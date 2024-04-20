@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    /* background-color: #f8f8f8; */
+    background-color: #fff;
+}
+
+:root {
+    --background: linear-gradient(to right, #2dfff5, #fff878);
+}
+
+
+/* .sidebar */
+
+.sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    padding: 5px;
+    background: #e8e8e8;
+    z-index: 1;
+    overflow-y: none;
+}
+
+.sidebar:hover {
+    /*fa tsy de ilaina safke ef ajuster tsar amley ecran lc le sidebar ako ee*/
+    overflow-y: auto;
+}
+
+.main-home {
+    position: absolute;
+    width: 299px;
+    height: 70vh;
+    background: #fff;
+    border-radius: 2px 0 0 2px;
+}
+
+
+/* .logo img {
+    width: 250px;
+} */
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #e2336b;
+}
+
+.profile-img img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.name {
+    margin-top: 15px;
+}
+
+.profile span {
+    margin-top: 5px;
+}
+
+.information {
+    box-shadow: 0 2px 2px rgba(177, 176, 176, 0.69);
+    padding: 5px;
+    background-color: #e8e8e8;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin: 40px;
+}
+
+.box {
+    text-align: center;
+}
+
+.box h3 {
+    font-size: 20px;
+}
+
+.box span {
+    font-size: 16px;
+}
+
+.description {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* margin: 20px; */
+    /* padding: 9px; */
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 20px;
+}
+
+#bio {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.icon img {
+    width: 18px;
+    margin-right: 12px;
+}
+
+.menue {
+    margin-top: 16%;
+}
+
+.menue a {
+    width: 100%;
+    font-size: 16px;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 50px;
+}
+
+.menue a:hover {
+    color: #e2336b;
+}
+
+.menue a:hover::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 3px;
+    height: 20px;
+    background: #e2336b;
+}
+
+
+/* container*/
+
+.container-ensemble {
+    margin-left: 300px;
+    /* padding: auto; */
+    background-color: #fff;
+    width: 76.5%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 1%;
+    gap: 8px;
+}
+
+.header img {
+    height: 240px;
+    width: 300px;
+    border-radius: 14px;
+}
+
+.containerForm,
+.container-post {
+    align-items: center;
+    padding: 60px;
+    gap: 9px;
+    background-color: #ffffff97;
+}
+
+.titre {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #000;
+    letter-spacing: 0.7px;
+    margin-bottom: 20px;
+    margin-left: 37%;
+}
+
+.info {
+    margin-left: 20px;
+    font-size: 12px;
+    color: rgb(66, 66, 66);
+    font-weight: bolder;
+    letter-spacing: 0.6px;
+}
+
+input {
+    font-size: 16px;
+    background: rgb(240, 240, 240);
+    padding: 12px 15px;
+    margin: 8px 15px;
+    width: 260px;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    gap: 20px;
+}
+
+.nom-prenom {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.username-email {
+    display: flex;
+    flex-direction: column;
+}
+
+#btn {
+    width: 160px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #e2338a, #e2336b);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 12px;
+    margin-top: 25px;
+    margin-left: 37%;
+    border-radius: 25px;
+    border: 1px rgb(80, 180, 180);
+    outline: none;
+    letter-spacing: 1px;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+
+#btn:active {
+    transform: scale(0.9);
+}
+
+.a-remplir2,
+.a-remplir {
+    margin-top: 2%;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.a-remplir {
+    margin-top: 5%;
+}
+
+.a-remplir2 {
+    margin-bottom: 1%;
+}
+
+
+/*containerpost*/
+
+
+/* .post-contenue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    width: 400px;
+    gap: 40%;
+} */
+
+
+/* .publication_user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    padding: 4%;
+    border-radius: 14px;
+    background-color: #2dfff5;
+} */
+
+.publication_user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto;
+    position: relative; */
+    gap: 40px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 3px rgba(182, 182, 182, 0.495);
+}
+
+.post:hover {
+    box-shadow: 0 0 15px 3px rgba(19, 19, 19, 0.301);
+}
+
+.post-contenue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 400px;
+    /* border-bottom: 1px solid rgba(19, 19, 19, 0.301); */
+}
+
+
+/* 
+img {
+    border-radius: 9px;
+} */

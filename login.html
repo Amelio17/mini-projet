@@ -1,0 +1,61 @@
+<!DOCTYPE Html>
+<html>
+
+<head>
+    <title>login avec sliding</title>
+    <link rel="stylesheet" type="text/css" href="../test_Login/css/login_sliding.css">
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="sign-in">
+            <form id="loginForm" action="#">
+                <h1>Se connecter</h1>
+                <div class="social">
+                    <a href=""><img src="../test_Login/images/facebook.png" alt=""></a>
+                    <a href=""><img src="../test_Login/images/ig.png" alt=""></a>
+                    <a href=""><img src="../test_Login/images/twitter.png" alt=""></a>
+                </div>
+                <p>Ou bien utilser votre login</p>
+                <input type="text" name="username" id="username" placeholder="nom d'utilisateur">
+                <input type="password" name="password" id="password" placeholder="mot de passe">
+                <a href="">vous avez oblier le mot de passe ?</a>
+                <input type="submit" class="btn" value="sign-in"></input>
+            </form>
+        </div>
+        <div class="sign-up">
+            <form action="">
+                <h1>Creer un compte</h1>
+                <div class="social">
+                    <a href=""><img src="../sliding/images/facebook.png" alt=""></a>
+                    <a href=""><img src="../sliding/images/ig.png" alt=""></a>
+                    <a href=""><img src="../sliding/images/twitter.png" alt=""></a>
+                </div>
+                <p>Creer votre compte</p>
+                <input type="text" name="txt" placeholder="nom d'utilisateur">
+                <input type="email" name="email" placeholder="e-mail">
+                <input type="password" name="password" placeholder="mot de passe">
+
+                <input type="submit" class="btn" value="sign-up"></input>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay" id="overlay">
+                <div class="overlay-left">
+                    <h1>bienvenue</h1>
+                    <p>Pour connecter veillez vous connecté</p>
+                    <input type="button" class="btn" id="sign-in" value="sign-in"></input>
+                </div>
+                <div class="overlay-right">
+                    <h1>bonjour a vous</h1>
+                    <p>entrez votre information pour creer un compte</p>
+                    <input type="button" class="btn" id="sign-up" value="sign-up"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../test_Login/js/login.js"></script>
+<script type="text/javascript" src="../test_Login/js/bcklogin.js"></script>
+
+</html>
